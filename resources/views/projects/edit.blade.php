@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 @section('content')
 <div class="container mx-auto p-4">
     <h1 class="text-2xl font-bold mb-4">Editar Proyecto</h1>

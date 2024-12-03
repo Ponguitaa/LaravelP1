@@ -35,7 +35,7 @@ default user found. Please create a user first.');
 'name' => $request->name,
  'description' => $request->description,
  'deadline' => $request->deadline,
- 'user_id' => $defaultUser->id, // Usuario predeterminado
+ 'user_id' => auth()->id(), // Usuario predeterminado
  ]);
  return redirect()->route('projects.index')->with('success', 'Project 
 created successfully!');
